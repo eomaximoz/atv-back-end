@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pani Estoque maximo</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Pani Estoque Maximo</h1>
+    
+    <div class="formulario">
+      <h2>Cadastro de Produto</h2>
+      <input type="text" id="nomeProduto" placeholder="Nome do Produto" />
+      <input type="number" id="quantidadeProduto" placeholder="Quantidade" />
+      <input type="number" id="categoria.Produto" placeholder="categoria" />
+      <input type="number" id="Unidade.Produto" placeholder="Unidade" />
+
+      <button onclick="adicionarProduto()">Cadastrar Produto</button>
+    </div>
+
+    <div class="buscar">
+      <h2>Buscar Produto</h2>
+      <input type="text" id="buscaProduto" placeholder="Digite o nome do produto" />
+      <button onclick="buscarProduto()">Buscar</button>
+      
+
+    </div>
+
+    <h2>Produtos Cadastrados</h2>
+    <ul id="listaProdutos"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
